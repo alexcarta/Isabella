@@ -7,6 +7,8 @@
   <!--========== BOX ICONS ==========-->
   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
 
   <!--========== CSS ==========-->
@@ -19,7 +21,7 @@
   <!--========== HEADER ==========-->
   <header class="l-header" id="header">
     <nav class="nav bd-container">
-      <a href="#" class="nav__logo">ISABELLA</a>
+      <a href="#" class="nav__logo"><img src="./assets/img/eyes.png" alt=""></a>
 
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
@@ -38,15 +40,13 @@
 
   <main class="l-main">
     <!--========== HOME ==========-->
-    <section class="home" id="home">
-      <div class="home__container bd-container bd-grid">
+    <section class="home" style="background-image: url(./assets/img/home.jpg)" id="home">
+      <div class="home__container bd-container" >
         <div class="home__data">
           <h1 class="home__title">Estetica da Isabella</h1>
           <h2 class="home__subtitle">Beauty, Cosmetic <br>and Personal Care.</h2>
-          <a href="#" class="button">📍 Location</a>
+          <a href="https://www.google.com/maps/place/Estetica+Da+Isabella/@40.3182543,9.3164379,15z/data=!4m2!3m1!1s0x0:0x4d18084e546ce428?sa=X&ved=2ahUKEwiD-t_sg7DyAhWMgf0HHTK0CKMQ_BIwCnoECEcQBQ" class="button"><i class="uil uil-location-point"></i> Dove trovarmi</a>
         </div>
-
-        <img src="assets/img/home.jpg" alt="" class="home__img">
       </div>
     </section>
 
@@ -57,7 +57,7 @@
           <span class="section-subtitle about__initial">ISABELLA</span>
           <h2 class="section-title about__initial">Anni di esperienza <br>a tua disposizione</h2>
           <p class="about__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-          <a href="#" class="button">Explore history</a>
+          <a href="https://www.instagram.com/estetica_daisabella/?hl=en" class="button"><i class="uil uil-instagram"></i> Seguimi</a>
         </div>
 
         <img src="assets/img/about.jpeg" alt="" class="about__img">
@@ -104,23 +104,31 @@
     <span class="section-subtitle">listino</span>
     <h3 class="section-title">PREZZI</h3>
 
-    <div class="prices__container bd-grid">
+    <div class="prices__container">
       <div>
 
         <!-- prices 1 -->
 
-        <div class="prices__content prices__open">
+        <div class="prices__content prices__close">
           <div class="prices__header">
             <div>
-              <h3 class="services__title">Ceretta</h3>
+              <h3 class="prices__title">Ceretta</h3>
             </div>
+
             <i class="uil uil-angle-down prices__arrow"></i>
+
           </div>
 
           <div class="prices__list grid">
 
             <div class="prices__data">
-              <h4 class="prices__name">Donna</h4>
+              <div class="prices__titles" style="justify-content:center;">
+                <h4 class="prices__subtitle">DONNA</h4>
+                <span class="prices__number"><i class="fas fa-female prices__icon"></i></span>
+              </div>
+            </div>
+
+            <div class="prices__data">
               <div class="prices__titles">
                 <h4 class="prices__name">Viso</h4>
                 <span class="prices__number">€ 10,00</span>
@@ -191,7 +199,13 @@
             </div>
 
             <div class="prices__data">
-              <h4 class="prices__name">Uomo</h4>
+              <div class="prices__titles" style="justify-content:center;">
+                <h4 class="prices__subtitle">UOMO</h4>
+                <span class="prices__number"><i class="fas fa-male prices__icon"></i></span>
+              </div>
+            </div>
+
+            <div class="prices__data">
               <div class="prices__titles">
                 <h4 class="prices__name">Schiena</h4>
                 <span class="prices__number">€ 25,00</span>
@@ -251,395 +265,408 @@
 
         </div>
 
-      </div>
-    </div>
-  </div>
+        <!-- prices 2 -->
 
-  <!-- prices 2 -->
+        <div class="prices__content prices__close">
+          <div class="prices__header">
 
-  <div class="prices__content prices__close">
-    <div class="prices__header">
+            <div>
+              <h3 class="prices__title">Luce Pulsata</h3>
+            </div>
 
-      <div>
-        <h3 class="services__title">Luce Pulsata</h3>
-      </div>
+            <i class="uil uil-angle-down prices__arrow"></i>
 
-      <i class="uil uil-angle-down prices__arrow"></i>
-    </div>
+          </div>
 
-    <div class="prices__list grid">
+          <div class="prices__list grid">
 
-      <div class="prices__data">
-        <h4 class="prices__name">Donna</h4>
-        <div class="prices__titles">
-          <h4 class="prices__name">Piccole zone <p style="font-size: 10px;">(es. basette, attacatura capelli, mento, baffetti)</p></h4>
-          <span class="prices__number">€ 30,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles" style="justify-content:center;">
+                <h4 class="prices__subtitle">DONNA</h4>
+                <span class="prices__number"><i class="fas fa-female prices__icon"></i></span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Viso</h4>
-          <span class="prices__number">€ 60,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Piccole zone <p style="font-size: 10px;">(es. basette, attacatura capelli, mento, baffetti)</p></h4>
+                <span class="prices__number">€ 30,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Ascelle</h4>
-          <span class="prices__number">€ 50,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Viso</h4>
+                <span class="prices__number">€ 60,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Braccia</h4>
-          <span class="prices__number">€ 70,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Ascelle</h4>
+                <span class="prices__number">€ 50,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Inguine</h4>
-          <span class="prices__number">€ 50,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Braccia</h4>
+                <span class="prices__number">€ 70,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">1/2 Gamba</h4>
-          <span class="prices__number">€ 80,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Inguine</h4>
+                <span class="prices__number">€ 50,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Cosce</h4>
-          <span class="prices__number">€ 100,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">1/2 Gamba</h4>
+                <span class="prices__number">€ 80,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Gambe + cosce</h4>
-          <span class="prices__number">€ 120,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Cosce</h4>
+                <span class="prices__number">€ 100,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <h4 class="prices__name">Uomo</h4>
-        <div class="prices__titles">
-          <h4 class="prices__name">Piccole zone <p style="font-size: 10px;">(es. zigomi, definizione della barba)</p></h4>
-          <span class="prices__number">€ 30,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Gambe + cosce</h4>
+                <span class="prices__number">€ 120,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Schiena totale</h4>
-          <span class="prices__number">€ 100,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles" style="justify-content:center;">
+                <h4 class="prices__subtitle">UOMO</h4>
+                <span class="prices__number"><i class="fas fa-male prices__icon"></i></span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Petto</h4>
-          <span class="prices__number">€ 45,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Piccole zone <p style="font-size: 10px;">(es. zigomi, definizione della barba)</p></h4>
+                <span class="prices__number">€ 30,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Addome</h4>
-          <span class="prices__number">€ 45,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Schiena totale</h4>
+                <span class="prices__number">€ 100,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Petto + addome</h4>
-          <span class="prices__number">€ 90,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Petto</h4>
+                <span class="prices__number">€ 45,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Collo</h4>
-          <span class="prices__number">€ 40,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Addome</h4>
+                <span class="prices__number">€ 45,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Gambe + cosce</h4>
-          <span class="prices__number">€ 140,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Petto + addome</h4>
+                <span class="prices__number">€ 90,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Braccia totali</h4>
-          <span class="prices__number">€ 80,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Collo</h4>
+                <span class="prices__number">€ 40,00</span>
+              </div>
+            </div>
 
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Braccia parziali</h4>
-          <span class="prices__number">€ 40,00</span>
-        </div>
-      </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Gambe + cosce</h4>
+                <span class="prices__number">€ 140,00</span>
+              </div>
+            </div>
 
-    </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Braccia totali</h4>
+                <span class="prices__number">€ 80,00</span>
+              </div>
+            </div>
 
-  </div>
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Braccia parziali</h4>
+                <span class="prices__number">€ 40,00</span>
+              </div>
+            </div>
 
+          </div>
 
-  <!-- prices 3 -->
-
-  <div class="prices__content prices__close">
-    <div class="prices__header">
-
-      <div>
-        <h3 class="services__title">Massaggi e Trattamenti</h3>
-      </div>
-
-      <i class="uil uil-angle-down prices__arrow"></i>
-    </div>
-
-    <div class="prices__list grid">
-
-      <div class="prices__data">
-        <h4 class="prices__name">Massaggi Corpo</h4>
-        <div class="prices__titles">
-          <h4 class="prices__name">50 minuti</h4>
-          <span class="prices__number">€ 50,00</span>
-        </div>
-      </div>
-
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Californiano da 50 minuti</h4>
-          <span class="prices__number">€ 50,00</span>
-        </div>
-      </div>
-
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Schiena da 30 minuti<p style="font-size: 10px;">(miofasciale o decontratturante)</p></h4>
-          <span class="prices__number">€ 35,00</span>
-        </div>
-      </div>
-
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Gambe e cosce da 30 minuti <p style="font-size: 10px;">(drenante o anti cellulite)</p></h4>
-          <span class="prices__number">€ 35,00</span>
-        </div>
-      </div>
-
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Modellamento profondo da 30 minuti <p style="font-size: 10px;">(viso + collo e decolletè)</p></h4>
-          <span class="prices__number">€ 30,00</span>
-        </div>
-      </div>
-
-      <div class="prices__data">
-        <h4 class="prices__name">Trattamenti Viso</h4>
-        <div class="prices__titles">
-          <h4 class="prices__name">Pulizia con ultrasuoni <p style="font-size: 10px;">(detersione, esfoliazione, maschera, massaggio)</p> </h4>
-          <span class="prices__number">€ 40,00</span>
-        </div>
-      </div>
-
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Trattamento ristrutturante e idratante <p style="font-size: 10px;">(alla Bionanocellulosa)</p></h4>
-          <span class="prices__number">€ 50,00</span>
-        </div>
-      </div>
-
-      <div class="prices__data">
-        <div class="prices__titles">
-          <h4 class="prices__name">Trattamenti specifici <p style="font-size: 10px;">(es. pelli impure, macchie, pelli sensibili)</p></h4>
-          <span class="prices__number">€ 50,00</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- prices 4 -->
-
-    <div class="prices__content prices__close">
-      <div class="prices__header">
-
-        <div>
-          <h3 class="services__title">Manicure/Pedicure</h3>
         </div>
 
-        <i class="uil uil-angle-down prices__arrow"></i>
-      </div>
 
-      <div class="prices__list grid">
+        <!-- prices 3 -->
 
-        <div class="prices__data">
-          <h4 class="prices__name">Manicure</h4>
-          <div class="prices__titles">
-            <h4 class="prices__name">Estetico</h4>
-            <span class="prices__number"> <p style="font-size: 10px">a partire da</p>€ 15,00</span>
+        <div class="prices__content prices__close">
+          <div class="prices__header">
+
+            <div>
+              <h3 class="prices__title">Massaggi e Trattamenti</h3>
+            </div>
+
+            <i class="uil uil-angle-down prices__arrow"></i>
+
+          </div>
+
+          <div class="prices__list grid">
+
+            <div class="prices__data">
+              <div class="prices__titles" style="justify-content:center;">
+                <h4 class="prices__subtitle">TRATTAMENTI CORPO</h4>
+                <span class="prices__number"><i class="fas fa-child prices__icon"></i></span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">50 minuti</h4>
+                <span class="prices__number">€ 50,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Californiano da 50 minuti</h4>
+                <span class="prices__number">€ 50,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Schiena da 30 minuti<p style="font-size: 10px;">(miofasciale o decontratturante)</p></h4>
+                <span class="prices__number">€ 35,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Gambe e cosce da 30 minuti <p style="font-size: 10px;">(drenante o anti cellulite)</p></h4>
+                <span class="prices__number">€ 35,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Modellamento profondo da 30 minuti <p style="font-size: 10px;">(viso + collo e decolletè)</p></h4>
+                <span class="prices__number">€ 30,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles" style="justify-content:center;">
+                <h4 class="prices__name">TRATTAMENTI VISO</h4>
+                <span class="prices__number"><i class="ri-user-fill prices__icon"></i></span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Pulizia con ultrasuoni <p style="font-size: 10px;">(detersione, esfoliazione, maschera, massaggio)</p> </h4>
+                <span class="prices__number">€ 40,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Trattamento ristrutturante e idratante <p style="font-size: 10px;">(alla Bionanocellulosa)</p></h4>
+                <span class="prices__number">€ 50,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Trattamenti specifici <p style="font-size: 10px;">(es. pelli impure, macchie, pelli sensibili)</p></h4>
+                <span class="prices__number">€ 50,00</span>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="prices__data">
-          <div class="prices__titles">
-            <h4 class="prices__name">Con semipermamente</h4>
-            <span class="prices__number"><p style="font-size: 10px">a partire da</p>€ 20,00</span>
+        <!-- prices 4 -->
+
+        <div class="prices__content prices__close">
+          <div class="prices__header">
+
+            <div>
+              <h3 class="prices__title">Manicure/Pedicure</h3>
+            </div>
+
+            <i class="uil uil-angle-down prices__arrow"></i>
+
+          </div>
+
+          <div class="prices__list grid">
+
+            <div class="prices__data">
+              <div class="prices__titles" style="justify-content:center;">
+                <h4 class="prices__subtitle">MANICURE</h4>
+                <span class="prices__number"><i class="fas fa-sign-language prices__icon"></i></span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Estetico</h4>
+                <span class="prices__number"> <p style="font-size: 10px">a partire da</p>€ 15,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Con semipermamente</h4>
+                <span class="prices__number"><p style="font-size: 10px">a partire da</p>€ 20,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Rimozione gel o semipermanente</h4>
+                <span class="prices__number"><p style="font-size: 10px">a partire da</p>€ 5,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Ricostruzione gel</h4>
+                <span class="prices__number"><p style="font-size: 10px">a partire da</p>€ 35,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles" style="justify-content:center;">
+                <h4 class="prices__subtitle">PEDICURE</h4>
+                <span class="prices__number"><i class="ri-footprint-fill prices__icon"></i></span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Estetico con semipermanente</p></h4>
+                <span class="prices__number">€ 30,00</span>
+              </div>
+            </div>
+
+            <div class="prices__data">
+              <div class="prices__titles">
+                <h4 class="prices__name">Curativo con smalto o semipermanente</h4>
+                <span class="prices__number">€ 35,00</span>
+              </div>
+            </div>
+
+
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="prices__data">
-          <div class="prices__titles">
-            <h4 class="prices__name">Rimozione gel o semipermanente</h4>
-            <span class="prices__number"><p style="font-size: 10px">a partire da</p>€ 50,00</span>
+    <!--===== NOVITA' =======-->
+    <section class="app section bd-container">
+      <div class="app__container bd-grid">
+        <div class="app__data">
+          <span class="section-subtitle app__initial">novità</span>
+          <h2 class="section-title app__initial">LAMINAZIONE CIGLIA</h2>
+          <p class="app__description">La laminazione ciglia è il trattamento estetico che fissa, curva e allunga le ciglia naturali per ottenere uno sguardo aperto e luminoso. Trattamento alla cheratina, aiuta a rinforzare la struttura dei peli e permette di ottenere un effetto benefico fino a 6-8 settimane.
+          Alternativa perfetta sia per ciglia e sopracciglia, la laminazione ciglia o lash filler ti dà la possibilità di evitare di usare il mascara, ciglia finte e piegaciglia.</p>
+
+          <div class="contact__button">
+          <a class="button" id="myBtn">Info</a>
+
+          <!-- The Modal -->
+        <div id="myModal" class="modal" style="display: none;">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
           </div>
+
         </div>
 
-        <div class="prices__data">
-          <div class="prices__titles">
-            <h4 class="prices__name">Ricostruzione gel</h4>
-            <span class="prices__number"><p style="font-size: 10px">a partire da</p>€ 35,00</span>
-          </div>
         </div>
 
-        <div class="prices__data">
-          <h4 class="prices__name">Pedicure</h4>
-          <div class="prices__titles">
-            <h4 class="prices__name">Estetico con semipermanente</p></h4>
-            <span class="prices__number">€ 30,00</span>
-          </div>
-        </div>
-
-        <div class="prices__data">
-          <div class="prices__titles">
-            <h4 class="prices__name">Curativo con smalto o semipermanente</h4>
-            <span class="prices__number">€ 35,00</span>
-          </div>
         </div>
 
 
+
+        <img src="assets/img/novita.jpeg" alt="" class="app__img">
+      </div>
+    </section>
+
+    <!--========== CONTACT US ==========-->
+    <section class="contact section bd-container" id="contact">
+      <div class="contact__container bd-grid">
+        <div class="contact__data">
+          <span class="section-subtitle contact__initial">prendi appuntamento</span>
+          <h2 class="section-title contact__initial">CONTATTAMI</h2>
+          <p class="contact__description">Per fissare il tuo appuntamento puoi chiamare, inviare un SMS o scrivermi su whatsapp, ogni giorno dal Lunedì al Sabato dalle 9 alle 20.</p>
+        </div>
+
+        <div class="contact__button">
+          <a href="#" class="button">Scrivimi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--========== FOOTER ==========-->
+  <footer class="footer section bd-container">
+    <div class="footer__container bd-grid">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">Estetica da ISABELLA</a>
+        <span class="footer__description">Beauty, Cosmetic & Personal Care</span>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Social Media</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/estetica_daisabella/?hl=en" class="footer__link">Instagram</a></li>
+          <li><a href="https://www.facebook.com/esteticadaisabella" class="footer__link">Facebook</a></li>
+          <li><a href="https://www.google.com/search?q=estetica+isabella+nuoro&rlz=1C5CHFA_enDE956DE957&oq=estetica+isabella+nuoro&aqs=chrome..69i57.2815j0j7&sourceid=chrome&ie=UTF-8#lrd=0x12de87c9c7e2a765:0x4d18084e546ce428,1,,," class="footer__link">Google Reviews</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Location</h3>
+        <ul>
+          <li>Nuoro - 08100 - NU</li>
+          <li>Viale della Repubblica, 67</li>
+          <li>+39 324 798 6959</li>
+        </ul>
       </div>
     </div>
 
-  </div>
-</div>
-</section>
+    <p class="footer__copy">&#169; 2021 Estetica da ISABELLA. All right reserved. Pagina creata da <a href="https://alessandrocarta.herokuapp.com/">Alessandro Carta Frontend Developer</a></p>
+  </footer>
 
-<!--========== MENU ==========-->
-<section class="menu section bd-container" id="menu">
-  <span class="section-subtitle">listino</span>
-  <h2 class="section-title">PREZZI</h2>
+  <!--========== SCROLL REVEAL ==========-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-f0ce5e90-74d0-44eb-9dce-dcb950e606e6"></div>
 
-  <div class="menu__container bd-grid">
-
-    <div class="menu__content">
-      <h3 class="menu__name">Ceretta</h3>
-      <a href="#" class="button menu__button"><i class="uil uil-arrow-down"></i></i></a>
-    </div>
-
-    <div class="menu__content">
-      <h3 class="menu__name">Luce Pulsata</h3>
-      <a href="#" class="button menu__button"><i class="uil uil-arrow-down"></i></i></a>
-    </div>
-
-    <div class="menu__content">
-      <h3 class="menu__name">Massaggi</h3>
-      <a href="#" class="button menu__button"><i class="uil uil-arrow-down"></i></i></a>
-    </div>
-
-    <div class="menu__content">
-      <h3 class="menu__name">Manicure/Pedicure</h3>
-      <a href="#" class="button menu__button"><i class="uil uil-arrow-down"></i></i></a>
-    </div>
-  </div>
-</section>
-
-<!--===== NOVITA' =======-->
-<section class="app section bd-container">
-  <div class="app__container bd-grid">
-    <div class="app__data">
-      <span class="section-subtitle app__initial">novità</span>
-      <h2 class="section-title app__initial">LAMINAZIONE CIGLIA</h2>
-      <p class="app__description">La laminazione ciglia è il trattamento estetico che fissa, curva e allunga le ciglia naturali per ottenere uno sguardo aperto e luminoso. Trattamento alla cheratina, aiuta a rinforzare la struttura dei peli e permette di ottenere un effetto benefico fino a 6-8 settimane.
-      Alternativa perfetta sia per ciglia e sopracciglia, la laminazione ciglia o lash filler ti dà la possibilità di evitare di usare il mascara, ciglia finte e piegaciglia.</p>
-    </div>
-
-    <img src="assets/img/novita.jpeg" alt="" class="app__img">
-  </div>
-</section>
-
-<!--========== CONTACT US ==========-->
-<section class="contact section bd-container" id="contact">
-  <div class="contact__container bd-grid">
-    <div class="contact__data">
-      <span class="section-subtitle contact__initial">prendi appuntamento</span>
-      <h2 class="section-title contact__initial">CONTATTAMI</h2>
-      <p class="contact__description">Per fissare il tuo appuntamento puoi chiamare, inviare un SMS o scrivermi su whatsapp, ogni giorno dal Lunedì al Sabato dalle 9 alle 20.</p>
-    </div>
-
-    <div class="contact__button">
-      <a href="#" class="button">Contact us now</a>
-    </div>
-  </div>
-</section>
-</main>
-
-<!--========== FOOTER ==========-->
-<footer class="footer section bd-container">
-  <div class="footer__container bd-grid">
-    <div class="footer__content">
-      <a href="#" class="footer__logo">Estetica da ISABELLA</a>
-      <span class="footer__description">Beauty, Cosmetic & Personal Care</span>
-    </div>
-
-    <div class="footer__content">
-      <h3 class="footer__title">Servizi</h3>
-      <ul>
-        <li><a href="#" class="footer__link">Ceretta</a></li>
-        <li><a href="#" class="footer__link">Luce pulsata</a></li>
-        <li><a href="#" class="footer__link">Trattamenti</a></li>
-        <li><a href="#" class="footer__link">Manicure e Pedicure</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__content">
-      <h3 class="footer__title">Social Media</h3>
-      <ul>
-        <li><a href="https://www.instagram.com/estetica_daisabella/?hl=en" class="footer__link">Instagram</a></li>
-        <li><a href="https://www.facebook.com/esteticadaisabella" class="footer__link">Facebook</a></li>
-        <li><a href="https://www.google.com/search?q=estetica+isabella+nuoro&rlz=1C5CHFA_enDE956DE957&oq=estetica+isabella+nuoro&aqs=chrome..69i57.2815j0j7&sourceid=chrome&ie=UTF-8#lrd=0x12de87c9c7e2a765:0x4d18084e546ce428,1,,," class="footer__link">Google Reviews</a></li>
-      </ul>
-    </div>
-
-    <div class="footer__content">
-      <h3 class="footer__title">Location</h3>
-      <ul>
-        <li>Nuoro - 08100 - NU</li>
-        <li>Viale della Repubblica, 67</li>
-        <li>+39 324 798 6959</li>
-      </ul>
-    </div>
-  </div>
-
-  <p class="footer__copy">&#169; 2021 Estetica da ISABELLA. All right reserved. Pagina creata da <a href="https://alessandrocarta.herokuapp.com/">Alessandro Carta Frontend Developer</a></p>
-</footer>
-
-<!--========== SCROLL REVEAL ==========-->
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-f0ce5e90-74d0-44eb-9dce-dcb950e606e6"></div>
-
-<!--========== MAIN JS ==========-->
-<script src="assets/js/main.js"></script>
+  <!--========== MAIN JS ==========-->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
