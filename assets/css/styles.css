@@ -6,8 +6,9 @@
   --header-height: 2rem;
 
   /*========== Colors ==========*/
-  --first-color: #F6A9A9;
-  --first-color-alt: #FFBF86;
+  --first-color: #77f3d9
+;
+  --first-color-alt: #77f3d9;
   --title-color: #393939;
   --text-color: #707070;
   --text-color-light: #A6A6A6;
@@ -298,6 +299,7 @@ img{
 
   .button:hover{
     background-color: var(--first-color-alt);
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   }
 
   /*========== ABOUT ==========*/
@@ -524,30 +526,57 @@ img{
     border-radius: .5rem 0 .5rem 0;
   }
 
+  /*LAMINAZIONWE*/
+
+  .novita__img{
+    margin-top: var(--mb-3);
+  }
+
+  .app__data{
+    text-align: center;
+  }
+
   /*MODAL*/
 
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
 
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+/* Modal Content */
+.modal-content {
+  border-radius: 15px;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
 
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+/* The Close Button */
+.close, .close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
   /*========== CONTACT ==========*/
   .contact__container{
@@ -557,6 +586,35 @@ img{
   .contact__description{
     margin-bottom: var(--mb-3);
   }
+
+.contact__content {
+  background-color: var(--input-color);
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+  box-shadow: 0 4px 4px rgba(0,0,0,.1);
+  margin-top: var(--mb-3);
+}
+
+.contact__input {
+  width: 100%;
+  background-color: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: lighter;
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
+
+.contact__submit{
+  font-size:  var(--normal-font-size);
+  font-family: var(--body-font);
+  color:  #fff;
+  font-weight:  var(--font-medium);
+  border: none;
+  margin-top: var(--mb-3);
+}
 
   /*========== FOOTER ==========*/
   .footer__container{
@@ -629,8 +687,9 @@ img{
       grid-template-columns: 1.75fr 1fr;
       align-items: center;
     }
-    .contact__button{
+    .contact__button, .contact__submit{
       justify-self: center;
+      margin: var(--mb-3);
     }
   }
 
@@ -685,10 +744,6 @@ img{
     }
     .menu__img{
       width: 130px;
-    }
-
-    .app__store{
-      margin: 0 var(--mb-1) 0 0;
     }
   }
 
