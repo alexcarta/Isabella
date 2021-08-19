@@ -6,8 +6,7 @@
   --header-height: 2rem;
 
   /*========== Colors ==========*/
-  --first-color: #77f3d9
-;
+  --first-color: #BDF3D4;
   --first-color-alt: #77f3d9;
   --title-color: #393939;
   --text-color: #707070;
@@ -61,51 +60,6 @@
 
 html{
   scroll-behavior: smooth;
-}
-
-/*========== Variables Dark theme ==========*/
-body.dark-theme{
-  --title-color: #F1F3F2;
-  --text-color: #C7D1CC;
-  --body-color: #1D2521;
-  --container-color: #27302C;
-}
-
-/*========== Button Dark/Light ==========*/
-.change-theme{
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: var(--text-color);
-  font-size: 1rem;
-  cursor: pointer;
-}
-
-body{
-  margin: var(--header-height) 0 0 0;
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-h1,h2,h3,p,ul{
-  margin: 0;
-}
-
-ul{
-  padding: 0;
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-}
-
-img{
-  max-width: 100%;
-  height: auto;
 }
 
 /*========== CLASS CSS ==========*/
@@ -218,56 +172,30 @@ img{
   color: var(--first-color);
 }
 
-/* Change background header */
-.scroll-header{
-  box-shadow: 0 2px 4px rgba(0,0,0,.1);
-}
-
-/* Scroll top */
-./*scrolltop{
-  position: fixed;
-  right: 1rem;
-  bottom: -20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: .3rem;
-  background: rgba(6,156,84,.5);
-  border-radius: .4rem;
-  z-index: var(--z-tooltip);
-  transition: .4s;
-  visibility: hidden;
-}
-
-.scrolltop:hover{
-  background-color: var(--first-color-alt);
-}
-
-.scrolltop__icon{
-  font-size: 1.8rem;
-  color: var(--body-color);
-  }*/
-
-  /* Show scrolltop */
-  .show-scroll{
-    visibility: visible;
-    bottom: 1.5rem;
-  }
-
   /*========== HOME ==========*/
 
   .home{
     background-size: cover;
     background-position: center;
+    background-color: var(--back-color);
   }
 
   .home__container{
     height: 100vh;
     align-content: center;
+    position: relative;
   }
 
   .home__data{
     padding-top: 20%;
+  }
+
+  .home__img{
+    position: absolute;
+    bottom: 15%;
+    margin-top: 15px;
+    left: 25%;
+    right: 25%;
   }
 
   .home__title{
@@ -291,10 +219,11 @@ img{
   .button{
     display: inline-block;
     background-color: var(--first-color);
-    color: #FFF;
+    color: var(--title-color);
     padding: .75rem 1rem;
     border-radius: .5rem;
     transition: .3s;
+    text-decoration: none;
   }
 
   .button:hover{
@@ -690,6 +619,7 @@ img{
     .contact__button, .contact__submit{
       justify-self: center;
       margin: var(--mb-3);
+      margin-left: 0;
     }
   }
 
