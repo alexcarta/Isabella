@@ -62,6 +62,52 @@ html{
   scroll-behavior: smooth;
 }
 
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+  --title-color: #F1F3F2;
+  --text-color: #C7D1CC;
+  --body-color: #1D2521;
+  --container-color: #27302C;
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme{
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: var(--text-color);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+body{
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1,h2,h3,p,ul{
+  margin: 0;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+
 /*========== CLASS CSS ==========*/
 .section{
   padding: 4rem 0 2rem;
@@ -139,6 +185,7 @@ html{
   color: var(--text-color);
   font-weight: var(--font-medium);
   width: 10%;
+  text-decoration: none;
 }
 
 .nav__logo img {
@@ -465,6 +512,11 @@ html{
     text-align: center;
   }
 
+  .laminazione__img{
+    width: 50%;
+    margin: 10px auto;
+  }
+
   /*MODAL*/
 
   /* The Modal (background) */
@@ -557,6 +609,12 @@ html{
     font-weight: var(--font-semi-bold);
   }
 
+  #footer-logo{
+    width: auto;
+    height: 1rem;
+    margin-top: 5px;
+  }
+
   .footer__description{
     display: block;
     font-size: var(--small-font-size);
@@ -620,6 +678,7 @@ html{
       justify-self: center;
       margin: var(--mb-3);
       margin-left: 0;
+      color: var(--title-color);
     }
   }
 
