@@ -678,13 +678,13 @@
                 <input type="name" name="name"  placeholder="Nome" class="contact__input">
               </div>
               <div class="contact__content">
-                <input type="email" name="email" placeholder="E-mail"  class="contact__input">
+                <input type="email" name="email" placeholder="E-mail"  pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" class="contact__input">
               </div>
               <div class="contact__content">
                 <input type="object" name="object" placeholder="Oggetto"  class="contact__input">
               </div>
               <div class="contact__content">
-                <textarea name="message" placeholder="Messaggio" id="" cols="0" rows="7" class="contact__input"></textarea>
+                <textarea name="message" placeholder="Scrivi il tuo messaggio di almeno 12 caratteri" pattern=".{12,}" id="" cols="0" rows="7" class="contact__input"></textarea>
               </div>
 
               <div class="contact__submit">
