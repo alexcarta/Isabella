@@ -734,6 +734,10 @@ img{
     .menu__img{
       width: 130px;
     }
+
+    .footer__container{
+      grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   @media screen and (min-width: 960px){
