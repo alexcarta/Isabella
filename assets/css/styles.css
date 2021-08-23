@@ -591,7 +591,7 @@ img{
 .contact__submit{
   font-size:  var(--normal-font-size);
   font-family: var(--body-font);
-  color:  #fff;
+  color: var(--title-color);
   font-weight:  var(--font-medium);
   border: none;
   margin-top: var(--mb-3);
@@ -647,7 +647,7 @@ img{
     text-align: center;
     font-size: var(--small-font-size);
     color: var(--text-color-light);
-    margin-top: 3.5rem;
+    margin-top: 5rem;
   }
 
   /*========== MEDIA QUERIES ==========*/
